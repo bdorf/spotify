@@ -49,7 +49,7 @@ main {
 }
 
 button {
-    background-color: #4251f5;
+    background-color: #1DB954;
     border: none;
     color: white;
     cursor: pointer;
@@ -81,13 +81,17 @@ button:hover {
   color: #333;
 }
 
+.light-mode header h1 {
+  color: #333;
+}
+
 .light-mode header,
 .light-mode .footer {
   background-color: #f0f0f0;
 }
 
 .light-mode button {
-  background-color: #4251f5;
+  background-color: #1DB954;
   color: #fff;
 }
 
