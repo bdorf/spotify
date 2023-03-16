@@ -36,10 +36,25 @@
     // Get the root element (body) to apply the theme class
     const appRoot = document.querySelector('body');
 
+    // Function to update the button text based on the current theme
+    function updateButtonText() {
+      if (appRoot.classList.contains('light-mode')) {
+        themeToggle.textContent = 'Dark Mode';
+      } else {
+        themeToggle.textContent = 'Light Mode';
+      }
+    }
+
+    // Initialize the button text
+    updateButtonText();
+
     // Add a click event listener to the theme toggle button
     themeToggle.addEventListener('click', () => {
       // Toggle the 'light-mode' class on the root element to switch themes
       appRoot.classList.toggle('light-mode');
+      // Update the button text
+      updateButtonText();
     });
   });
 </script>
+
