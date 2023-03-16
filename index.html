@@ -27,3 +27,19 @@
 
 </body>
 </html>
+
+<script>
+  // Wait for the DOM content to be loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    // Get the theme toggle button element
+    const themeToggle = document.getElementById('theme-toggle');
+    // Get the root element (body) to apply the theme class
+    const appRoot = document.querySelector('body');
+
+    // Add a click event listener to the theme toggle button
+    themeToggle.addEventListener('click', () => {
+      // Toggle the 'light-mode' class on the root element to switch themes
+      appRoot.classList.toggle('light-mode');
+    });
+  });
+</script>
