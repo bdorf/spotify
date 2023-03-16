@@ -67,6 +67,26 @@ button:hover {
     padding-left: 1rem;
 }
 
+/* Light Mode */
+.light-mode {
+  background-color: #fff;
+  color: #333;
+}
+
+.light-mode header,
+.light-mode .footer {
+  background-color: #f0f0f0;
+}
+
+.light-mode button {
+  background-color: #4251f5;
+  color: #fff;
+}
+
+.light-mode button:hover {
+  background-color: #3040c1;
+}
+
 .footer {
     background-color: #171717;
     box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.1);
