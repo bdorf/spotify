@@ -27,3 +27,10 @@ function renderRecommendations(recommendations) {
 }
 
 document.getElementById('login').addEventListener('click', authenticate);
+
+const themeToggle = document.getElementById('theme-toggle');
+const appRoot = document.querySelector('body');
+
+themeToggle.addEventListener('click', () => {
+  appRoot.classList.toggle('light-mode');
+});
